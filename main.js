@@ -65,9 +65,13 @@ blue.onclick = function(){
 }
 thin.onclick = function(){
   lineWidth = 3
+  thin.classList.add('active')
+  thick.classList.remove('active')
 }
 thick.onclick = function(){
   lineWidth = 8
+  thick.classList.add('active')
+  thin.classList.remove('active')
 }
 /********/
 function autoSetCanvasSize(canvas){
