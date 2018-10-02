@@ -30,13 +30,22 @@ download.onclick = function(){
   a.click() 
 }
 
+black.onclick = function(){
+  context.fillStyle = 'black'
+  context.strokeStyle = 'black'
+  black.classList.add('active')
+  green.classList.remove('active')
+  blue.classList.remove('active')
+  red.classList.remove('active')
+}
+
 red.onclick = function(){
   context.fillStyle = 'red'
   context.strokeStyle = 'red'
   red.classList.add('active')
   green.classList.remove('active')
   blue.classList.remove('active')
-  yellow.classList.remove('active')
+  black.classList.remove('active')
 }
 green.onclick = function(){
   context.fillStyle = 'green'
@@ -44,7 +53,7 @@ green.onclick = function(){
   red.classList.remove('active')
   green.classList.add('active')
   blue.classList.remove('active')
-  yellow.classList.remove('active')
+  black.classList.remove('active')
 }
 blue.onclick = function(){
   context.fillStyle = 'blue'
@@ -52,15 +61,7 @@ blue.onclick = function(){
   red.classList.remove('active')
   green.classList.remove('active')
   blue.classList.add('active')
-  yellow.classList.remove('active')
-}
-yellow.onclick = function(){
-  context.fillStyle = 'yellow'
-  context.strokeStyle = 'yellow'
-  red.classList.remove('active')
-  green.classList.remove('active')
-  blue.classList.remove('active')
-  yellow.classList.add('active')
+  black.classList.remove('active')
 }
 thin.onclick = function(){
   lineWidth = 3
